@@ -5,9 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Button;
 
-var _globals = _interopRequireDefault(require("./globals.css"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+require("./globals.scss");
 
 function Button(_ref) {
   let {
@@ -56,23 +54,23 @@ function Button(_ref) {
     if (type == i.type) {
       return /*#__PURE__*/React.createElement("button", {
         disabled: disabled,
-        className: _globals.default.className,
+        className: className,
         onClick: onClick,
-        className: "".concat(_globals.default.button, " ").concat(className),
+        className: "button ".concat(className),
         style: {
           backgroundColor: loading ? i.bgLoading : i.bgColor,
           color: i.color
         }
       }, /*#__PURE__*/React.createElement("span", {
-        className: _globals.default.content_btn
+        className: 'content_btn'
       }, loading && /*#__PURE__*/React.createElement("div", {
-        className: _globals.default.loading
+        className: 'loading'
       }), /*#__PURE__*/React.createElement("span", null, children)));
     }
   }) : /*#__PURE__*/React.createElement("button", {
-    className: _globals.default.className,
+    className: className,
     onClick: onClick,
-    className: "".concat(_globals.default.button_default, " ").concat(className),
+    className: "$button_default ".concat(className),
     style: {
       backgroundColor: '#fff',
       color: '#212529'

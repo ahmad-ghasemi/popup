@@ -1,4 +1,4 @@
-import style from './globals.css'
+import './globals.scss'
 export default function Button({
   children,
   type = '',
@@ -30,16 +30,16 @@ export default function Button({
             return (
               <button
                 disabled={disabled}
-                className={style.className}
+                className={className}
                 onClick={onClick}
-                className={`${style.button} ${className}`}
+                className={`button ${className}`}
                 style={{
                   backgroundColor: loading ? i.bgLoading : i.bgColor,
                   color: i.color,
                 }}
               >
-                <span className={style.content_btn}>
-                  {loading && <div className={style.loading}></div>}
+                <span className={'content_btn'}>
+                  {loading && <div className={'loading'}></div>}
                   <span>{children}</span>
                 </span>
               </button>
@@ -48,9 +48,9 @@ export default function Button({
         })
       ) : (
         <button
-          className={style.className}
+          className={className}
           onClick={onClick}
-          className={`${style.button_default} ${className}`}
+          className={`$button_default ${className}`}
           style={{
             backgroundColor: '#fff',
             color: '#212529',
