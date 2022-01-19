@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from '../../component/button'
+import Button from './button'
+import 'global.scss'
 export default function popup({
   title = 'Are u sure Remove this?',
   ok = 'yes',

@@ -20,4 +20,6 @@ var _popup = _interopRequireDefault(require("./component/popup"));
 
 var _Button = _interopRequireDefault(require("./component/Button"));
 
+require("./component/global.scss");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

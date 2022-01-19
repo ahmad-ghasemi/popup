@@ -7,7 +7,9 @@ exports.default = popup;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _button = _interopRequireDefault(require("../../component/button"));
+var _button = _interopRequireDefault(require("./button"));
+
+require("global.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
